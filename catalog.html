@@ -70,10 +70,20 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки, &#x20bd;:</legend>
-            <label for="for">От 0</label>
-            <input type="range" id="for" name="filter-for" step="1" min="0" max="1499" value="0">
-            <label for="to">До 3000</label>
-            <input type="range" id="to" name="filter-to" step="1" min="1500" max="3000" value="2500">
+
+            <label for="for">От </label>
+            <input id="for" type="text" name="filter-for" onkeydown="return false" value="0">
+            <label for="to">До </label>
+            <input id="to" type="text" name="filter-to" value="3000" onkeydown="return false">
+
+            <div> <!--тут будет не активная линии ползунка-->
+              <div>
+                <!--тут будет активная линии ползунка-->
+              </div>
+              <button type="button">От</button>
+              <button type="button">До</button>
+            </div>
+
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -109,6 +119,7 @@
             <a href="blank.html">
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница Amara Resort">
             </a>
+            <p>Рейтинг 4 звезды</p>
             <p>Рейтинг: 8,5</p>
           </li>
           <li>
@@ -122,6 +133,7 @@
             <a href="blank.html">
               <img src="img/Desert-Quail-Inn.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             </a>
+            <p>Рейтинг 3 звезды</p>
             <p>Рейтинг: 8,9</p>
           </li>
           <li>
@@ -135,6 +147,7 @@
             <a href="blamk.html">
               <img src="img/Villas-at-Poco-Diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
             </a>
+            <p>Рейтинг 2 звезды</p>
             <p>Рейтинг: 9,2</p>
           </li>
         </ul>
