@@ -82,7 +82,7 @@ body {
 
 .slogan {
   background-color: var(--second-blue);
-  background: url("../img/shape-background-white.png") no-repeat 0 bottom, url("../img/photo-mountains.jpg") no-repeat 0 top;
+  background: url("../img/shape-background-white.png") no-repeat center bottom, url("../img/photo-mountains.jpg") no-repeat center top;
   text-align: center;
   line-height: 26px;
 }
