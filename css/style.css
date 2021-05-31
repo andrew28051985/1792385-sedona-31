@@ -46,8 +46,9 @@ body {
 }
 
 .header {
-  min-width: 1200px;
+  max-width: 1200px;
   background-color: var(--basic-light);
+  margin: 0 auto;
 }
 .header__nav {
   text-align: center;
