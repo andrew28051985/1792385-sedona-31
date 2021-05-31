@@ -18,6 +18,23 @@
   font-display: swap;
 }
 
+:root {
+  --basic-dark: #000000;
+  --basic-light: #ffffff;
+  --basic-blue: #81B3D2;
+  --basic-brown: #766357;
+  --basic-form: #F2F2F2;
+  --basic-plus: #A9A9A9;
+  --second-dark: #333333;
+  --second-light: #EEEEEE;
+  --second-blue: #5496BD;
+  --second-brown: #503E33;
+  --second-form: #E5E5E5;
+  --hover-blue: #669EC0;
+  --hover-brown: #604E43;
+  --hover-form: #EBEBEB;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -25,4 +42,54 @@ body {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  color: var(--second-dark);
+}
+
+.header {
+  min-width: 1200px;
+  background-color: var(--basic-light);
+}
+.header__nav {
+  text-align: center;
+}
+.header__list {
+  line-height: 26px;
+  font-weight: 700;
+  text-align: left;
+}
+.header-list__item {
+  list-style-type: none;
+}
+.header-list-item__link {
+  color: var(--basic-color-dark);
+  text-decoration: none;
+}
+.header-list-item__link:hover {
+  color: var(--basic-blue);
+}
+.header-list-item__link:active {
+  opacity: 0.3;
+}
+.header-list-item__link--active,
+.header-list-item__link--active:hover,
+.header-list-item__link--active:active {
+  color: var(--basic-brown);
+  opacity: 1;
+}
+.header-list__item--right {
+  text-align: right;
+}
+
+.slogan {
+  background-color: var(--second-blue);
+  background: url("../img/shape-background-white.png") no-repeat 0 bottom, url("../img/photo-mountains.jpg") no-repeat 0 top;
+  text-align: center;
+  line-height: 26px;
+}
+.slogan__subtitle {
+  font-size: 21px;
+  font-weight: 700;
+  max-width: 470px;
+  padding: 0;
+  margin: 0 auto;
 }
