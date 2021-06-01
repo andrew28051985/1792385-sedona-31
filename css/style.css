@@ -244,8 +244,3 @@ body {
 .developers__logo:hover path {
   fill: var(--basic-blue);
 }
-
-/*.developers__link:active > svg {
-  fill: var(--basic-dark);
-  opacity: 0.3;
-}*/
