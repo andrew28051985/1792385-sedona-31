@@ -38,6 +38,9 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -46,14 +49,13 @@ body {
   text-transform: uppercase;
   color: var(--second-dark);
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .header {
   max-width: 1200px;
-  background-color: var(--basic-light);
   margin: 0 auto;
+
+  background-color: var(--basic-light);
 }
 .header__list {
   line-height: 26px;
@@ -65,6 +67,7 @@ body {
 }
 .header-list-item__link {
   color: var(--basic-color-dark);
+
   text-decoration: none;
 }
 .header-list-item__link:hover {
@@ -77,27 +80,31 @@ body {
 .header-list-item__link--active:hover,
 .header-list-item__link--active:active {
   color: var(--basic-brown);
+
   opacity: 1;
 }
-.header-list__item--right {
+.header-list__item:nth-child(3),
+.header-list__item:nth-child(4) {
   text-align: right;
 }
 
 .slogan {
+  line-height: 26px;
+
   background-color: var(--second-blue);
   background: url("../img/shape-background-white.png") no-repeat center 452px, url("../img/photo-mountains.jpg") no-repeat center top;
-  line-height: 26px;
 }
 .slogan__image-text {
   margin-bottom: 125px;
 }
 .slogan__subtitle {
-  font-size: 21px;
-  font-weight: 700;
-  color: var(--basic-dark);
   max-width: 470px;
   padding: 0;
   margin: 0 auto;
+
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--basic-dark);
 }
 
 .reasons ul {
@@ -118,9 +125,9 @@ body {
   font-weight: 700;
   color: var(--basic-dark);
 }
-.reasons__item--blue > .reasons-item__number,
-.reasons__item--blue > .reasons-item__text,
-.reasons__item--blue > .reasons-item__title {
+.reasons__item--blue .reasons-item__number,
+.reasons__item--blue .reasons-item__text,
+.reasons__item--blue .reasons-item__title {
   color: var(--basic-light);
 }
 
@@ -133,17 +140,19 @@ body {
   color: var(--basic-dark);
 }
 .search__text {
-  font-weight: 400;
   margin-bottom: 65px;
+
+  font-weight: 400;
 }
 .search__link {
   padding: 30px 125px;
 }
 .search__link,
 .result-item__button--book {
+  color: var(--basic-light);
+
   background-color: var(--basic-brown);
   text-decoration: none;
-  color: var(--basic-light);
 }
 .search__link,
 .form-search__button {
@@ -179,6 +188,12 @@ body {
   background-color: var(--basic-light);
   border: 2px solid var(--second-form);
 }
+.form-search__input + svg:hover > path {
+  fill: var(--basic-dark);
+}
+.form-search__input + svg:active > path {
+  fill: var(--basic-blue);
+}
 .popup,
 .form-search__input[value] {
   line-height: 26px;
@@ -190,9 +205,10 @@ body {
 }
 .form-search__button,
 .result-item__button--detail {
-  border: none;
   color: var(--basic-light);
+
   background-color: var(--basic-blue);
+  border: none;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -213,11 +229,12 @@ body {
   max-width: 1200px;
 }
 .footer,
-.contacts-item__tel {
+.contacts-item__tel,
+.contacts-item__inst {
   color: var(--basic-dark);
 }
 .footer ul {
-  list-style-type: none;
+  list-style: none;
 }
 .contacts {
   text-align: left;
@@ -228,14 +245,16 @@ body {
   font-weight: 700;
   line-height: 26px;
 }
-.contacts-item__tel {
+.contacts-item__tel,
+.contacts-item__inst {
   text-decoration: none;
 }
 
 .social-item__link {
   color: var(--basic-light);
-  text-decoration: none;
+
   background-color: var(--basic-blue);
+  text-decoration: none;
 }
 .social-item__link:hover,
 .social-item__link:focus {
@@ -247,15 +266,12 @@ body {
 .social-item__link:active > svg,
 .developers__link:active > svg {
   opacity: 0.3;
-
 }
 
 .developers {
   text-align: right;
 }
-.developers__link:hover svg {
-  fill: #fff;
-}
+
 .developers__logo:hover path {
   fill: var(--basic-blue);
 }
@@ -263,10 +279,12 @@ body {
 /* стили для страницы каталога*/
 
 .selection {
-  background: var(--basic-blue) url("../img/background-catalog.jpg") no-repeat 0 top;
   max-width: 1200px;
   margin: 0 auto;
+
   color: var(--basic-light);
+
+  background: var(--basic-blue) url("../img/background-catalog.jpg") no-repeat 0 top;
 }
 .selection-form__title {
   font-size: 16px;
@@ -274,23 +292,27 @@ body {
 }
 .selection-form-cost__input[value] {
   color: var(--basic-light);
+
   background-color: var(--input-catalog);
   border: none;
 }
 .selection-form__button-search {
+  padding: 7px 36px;
+
+  color: inherit;
+
   background-color: var(--input-catalog);
   border: 2px solid var(--basic-light);
   border-radius: 2px;
   text-transform: uppercase;
-  color: inherit;
   cursor: pointer;
-  padding: 7px 36px;
 }
 .selection-form__button-search:hover,
 .selection-form__button-search:active,
 .selection-form__button-search:focus {
-  background-color: var(--basic-light);
   color: var(--basic-dark);
+
+  background-color: var(--basic-light);
 }
 .selection-form__list {
   list-style: none;
@@ -303,6 +325,7 @@ body {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
   list-style: none;
 }
 .sorting__item{
@@ -314,17 +337,20 @@ body {
   line-height: 18px;
 }
 .sorting__item a {
-  text-decoration: none;
   color: var(--basic-dark);
-  opacity: 0.5;
+
   border-bottom: 1px dashed var(--basic-blue);
+  text-decoration: none;
+  opacity: 0.5;
 }
 .sorting__item a:hover {
   color: var(--basic-blue);
+
   opacity: 1;
 }
 .sorting__item a:active {
   color: var(--basic-dark);
+
   border-bottom: none;
   opacity: 1;
 }
@@ -333,12 +359,18 @@ body {
 }
 .sorting__list > .sorting__item + .sorting__item:nth-child(2) a {
   color: var(--basic-blue);
+
   border-bottom: none;
   opacity: 1;
+}
+
+.result__item {
+  list-style: none;
 }
 .result-item__button--book,
 .result-item__button--detail {
   padding: 3px 16px;
+
   font-weight: 700;
 }
 .result-item__button--detail,
@@ -352,16 +384,25 @@ body {
   color: var(--basic-dark);
 }
 .result-item__link:hover,
-.result-item__link:focus {
+.result-item__link:focus,
+.contacts-item__tel:hover,
+.contacts-item__tel:focus,
+.contacts-item__inst:hover,
+.contacts-item__inst:focus {
   color: var(--basic-blue);
 }
-.result-item__link:active > .result-item__title {
+.result-item__link:active > .result-item__title,
+.contacts-item__tel:active,
+.contacts-item__inst:active {
   color: var(--basic-dark);
+
   opacity: 0.3;
 }
 .result-item__rating {
-  color: var(--rating-color);
-  background-color: var(--basic-form);
   width: 110px;
   padding: 3px 0px;
+
+  color: var(--rating-color);
+
+  background-color: var(--basic-form);
 }
