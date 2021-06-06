@@ -35,6 +35,7 @@
   --hover-form: #EBEBEB;
   --input-catalog: rgba(255, 255, 255, 0);
   --rating-color: #666666;
+  --opacity90: rgba(255, 255, 255, 0.9);
 }
 
 .page {
@@ -127,7 +128,7 @@
   padding: 0;
 }
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .slogan__wrapper {
@@ -395,7 +396,14 @@
 }
 
 .footer {
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -120px;
+
+  background-color: var(--opacity90);
+}
+.inner-page + .footer {
+  margin-top: 0;
 }
 .footer,
 .contacts-item__tel,
@@ -405,8 +413,20 @@
 .footer ul {
   list-style: none;
 }
-.contacts {
-  text-align: left;
+.footer h2,
+.footer p,
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+.contacts,
+.developers {
+  width: 400px;
+}
+.contacts,
+.social,
+.developers {
+  text-align: center;
 }
 .contacts,
 .contacts-item {
@@ -418,7 +438,6 @@
 .contacts-item__inst {
   text-decoration: none;
 }
-
 .social-item__link {
   color: var(--basic-light);
 
@@ -436,11 +455,6 @@
 .developers__link:active > svg {
   opacity: 0.3;
 }
-
-.developers {
-  text-align: right;
-}
-
 .developers__logo:hover path {
   fill: var(--basic-blue);
 }
