@@ -256,15 +256,30 @@
 }
 
 .search {
+  display: grid;
+  grid-template-columns: 1fr 568px 1fr;
+  grid-template-rows: min-content min-content min-content;
+
   line-height: 24px;
   font-weight: 700;
 }
+.search__title,
+.search__text,
+.search__link {
+  grid-column: 2/3;
+}
 .search__title {
+  margin: 0;
+
   font-size: 30px;
   color: var(--basic-dark);
 }
 .search__text {
-  margin-bottom: 65px;
+  justify-self: center;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 30px 0;
+  width: 435px;
 
   font-weight: 400;
 }
@@ -298,7 +313,7 @@
 }
 
 .popup {
-  margin-top: 29px;
+  margin: 0;
 }
 .form-search__input{
   background-color: var(--basic-form);
