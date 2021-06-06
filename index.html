@@ -37,28 +37,34 @@
       <h1 class="main__title">Добро пожаловать в Седона</h1>
 
       <section class="slogan">
-        <div class="slogan__wrapper">
+        <div class="wrapper">
           <h2 class="slogan__title">Лозунг города Седона</h2>
-          <img src="img/text/sedona.svg" width="457" height="351" alt="Добро пожаловать в Седону, потому что лучше чем Гранд Каньон" class="slogan__image-text">
-          <p class="slogan__subtitle">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!<br>
-          </p>
-          <p>
-            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-          </p>
+          <div class="slogan__wrapper">
+            <img src="img/text/sedona.svg" width="457" height="351" alt="Добро пожаловать в Седону, потому что лучше чем Гранд Каньон" class="slogan__image-text">
+            <p class="slogan__subtitle">
+              Седона — небольшой городок в Аризоне, заслуживающий большего!<br>
+            </p>
+            <p>
+              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="reasons">
+      <section class="reasons wrapper">
         <h2 class="reasons__title">Преимущества Седоны</h2>
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--blue">
-            <h3 class="reasons-item__title">Настоящий городок</h3>
-            <p class="reasons-item__number">№1</p>
-            <p class="reasons-item__text">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
-            <img src="img/real-city.jpg" width="800" height="256" alt="Здание администрации на фоне гор и растений" class="reasons-item__image">
+            <div class="reasons-item__wrapper">
+              <div>
+                <h3 class="reasons-item__title">Настоящий городок</h3>
+                <p class="reasons-item__number">№1</p>
+                <p class="reasons-item__text">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+              </div>
+              <img src="img/real-city.jpg" width="800" height="256" alt="Здание администрации на фоне гор и растений">
+            </div>
             <ul class="reasons-item__list">
               <li class="reasons-item__item">
                 <h4 class="reasons-item-item__title">Жильё</h4>
@@ -75,12 +81,16 @@
             </ul>
           </li>
           <li class="reasons__item reasons__item--blue">
-            <h3 class="reasons-item__title">Там есть Мост дьявола</h3>
-            <p class="reasons-item__number">№2</p>
-            <p class="reasons-item__text">
-              Да, по нему можно пройти! Если конечно вы осмелитесь
-            </p>
-            <img src="img/devil-bridge.jpg" width="800" height="256" alt="Глубокий каньон" class="reasons-item__image">
+            <div class="reasons-item__wrapper">
+              <div class="reasons-item__descriotion">
+                <h3 class="reasons-item__title">Там есть Мост дьявола</h3>
+                <p class="reasons-item__number">№2</p>
+                <p class="reasons-item__text">
+                  Да, по нему можно пройти! Если конечно вы осмелитесь
+                </p>
+              </div>
+              <img src="img/devil-bridge.jpg" width="800" height="256" alt="Глубокий каньон" class="reasons-item__image">
+            </div>
           </li>
           <li class="reasons__item">
             <h3 class="reasons-item__title">небольшая площадь</h3>
@@ -149,7 +159,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer wrapper">
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts__list">

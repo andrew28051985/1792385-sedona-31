@@ -126,6 +126,10 @@
   margin: 0;
   padding: 0;
 }
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
 .slogan__wrapper {
   display: grid;
   grid-template-rows: min-content min-content min-content min-content;
@@ -150,13 +154,55 @@
   color: var(--basic-dark);
 }
 
+.reasons {
+  margin-bottom: 58px;
+}
 .reasons ul {
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.reasons__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content min-content min-content min-content;
 }
 .reasons__item {
   background-color: var(--second-light);
 }
+.reasons__item:nth-child(1) > .reasons-item__list > .reasons-item__item:nth-child(2) p {
+  padding-left: 51px;
+  padding-right: 51px;
+}
+.reasons__item:nth-child(1) > .reasons-item__list > .reasons-item__item:nth-child(3) p {
+  padding-left: 65px;
+  padding-right: 66px;
+}
+.reasons__item:nth-child(3),
+.reasons__item:nth-child(4),
+.reasons__item:nth-child(5) {
+  padding-top: 47px;
+}
+.reasons__item:nth-child(3) p:last-child,
+.reasons__item:nth-child(4) p:last-child,
+.reasons__item:nth-child(5) p:last-child {
+  margin-bottom: 54px;
+}
+.reasons__item:nth-child(3) p:last-child {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.reasons__item:nth-child(4) p:last-child,
+.reasons__item:nth-child(1) > .reasons-item__list > .reasons-item__item:nth-child(1) p {
+  padding-left: 71px;
+  padding-right: 71px;
+}
+.reasons__item:nth-child(5) p:last-child {
+  padding-left: 77px;
+  padding-right: 77px;
+}
 .reasons__item--blue {
+  grid-column: 1/-1;
   background-color: var(--basic-blue);
 }
 .reasons__item--blue > .reasons-item__list {
@@ -172,6 +218,41 @@
 .reasons__item--blue .reasons-item__text,
 .reasons__item--blue .reasons-item__title {
   color: var(--basic-light);
+}
+.reasons-item__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.reasons__list ul{
+  padding-bottom: 81px;
+}
+.reasons__item h3,
+.reasons__item p,
+.reasons__item img,
+.reasons-item__item h4,
+.reasons-item__item p,
+.reasons-item__wrapper p:last-child {
+  margin: 0;
+  padding: 0;
+}
+.reasons-item__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.reasons-item__wrapper > div {
+  padding: 50px 48px;
+}
+.reasons__list h3,
+.reasons__list h4,
+.reasons__list p,
+.reasons-item__wrapper p {
+  margin-bottom: 25px;
+}
+.reasons-item__descriotion {
+  order: 1;
+}
+.reasons-item__item {
+  padding-top: 55px;
 }
 
 .search {
