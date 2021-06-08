@@ -12,7 +12,7 @@
   </head>
   <body class="page-body">
 
-    <header class="header">
+    <header class="header wrapper">
       <nav class="header__nav">
         <a href="index.html" class="nav__link"><img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона"></a>
         <ul class="header__list">
@@ -37,7 +37,7 @@
 
       <h1 class="main__title">Выбор гостиницы в Седоне</h1>
 
-      <section class="selection">
+      <section class="selection wrapper">
         <h2 class="selection__title">Критерии выбора гостиницы</h2>
         <form method="POST" action="https://echo.htmlacademy.ru" class="selection__form">
           <fieldset>
@@ -64,11 +64,11 @@
                 <input type="checkbox" name="hotel" id="filter-hotel" class="selection-form__input" checked>
                 <label for="filter-hotel" class="selection-form__label">Гостиница</label>
               </li>
-              <li>
+              <li class="selection-form__item">
                 <input type="checkbox" name="motel" id="filter-motel" class="selection-form__input" checked>
                 <label for="filter-motel" class="selection-form__label">Мотель</label>
               </li>
-              <li>
+              <li class="selection-form__item">
                 <input type="checkbox" name="apartment" id="filter-apartment" class="selection-form__input" checked>
                 <label for="filter-apartment" class="selection-form__label">Апартаменты</label>
               </li>
@@ -96,71 +96,85 @@
       </section>
 
     <!--секция сортировка-->
-      <section class="sorting">
+      <section class="sorting wrapper">
         <h2 class="sorting__title">Сортировка результата поиска</h2>
-        <ul>
-          <li class="sorting__item-search">
-            <p>Найдено:</p>
-          </li>
-          <li class="sorting__item-search">
-            <p>3</p>
-          </li>
-        </ul>
-        <ul class="sorting__list">
-          <li class="sorting__item">
-            <p>Сортировка:</p>
-          </li>
-          <li class="sorting__item sorting__item--active"><a href="blank.html">По цене</a></li>
-          <li class="sorting__item"><a href="blank.html">По типу</a></li>
-          <li class="sorting__item"><a href="blank.html">По рейтингу</a></li>
-          <li class="sorting__item sorting__item-right"><a href="blank.html">По возрастанию</a></li>
-          <li class="sorting__item sorting__item-right"><a href="blank.html">По убыванию</a></li>
-        </ul>
+        <div class="sorting__container">
+          <ul>
+            <li class="sorting__item-search">
+              <p>Найдено:</p>
+            </li>
+            <li class="sorting__item-search">
+              <p>3</p>
+            </li>
+          </ul>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <p>Сортировка:</p>
+            </li>
+            <li class="sorting__item sorting__item--active"><a href="blank.html">По цене</a></li>
+            <li class="sorting__item"><a href="blank.html">По типу</a></li>
+            <li class="sorting__item"><a href="blank.html">По рейтингу</a></li>
+            <li class="sorting__item sorting__item-right"><a href="blank.html">По возрастанию</a></li>
+            <li class="sorting__item sorting__item-right"><a href="blank.html">По убыванию</a></li>
+          </ul>
+        </div>
       </section>
-      <section class="result">
+      <section class="result wrapper">
         <h2 class="result__title">Результат поиска</h2>
         <ul class="result__list">
           <li class="result__item">
-            <a href="blank.html" class="result-item__link">
-              <h3 class="result-item__title">Amara Resort &#38; Spa</h3>
-            </a>
-            <p class="result-item__text">Гостиница</p>
-            <p class="result-item__text">От 4000 &#x20bd;</p>
-            <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
-            <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+            <div>
+              <a href="blank.html" class="result-item__link">
+                <h3 class="result-item__title">Amara Resort &#38; Spa</h3>
+              </a>
+              <p class="result-item__text">Гостиница</p>
+              <p class="result-item__text">От 4000 &#x20bd;</p>
+              <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
+              <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+            </div>
             <a href="blank.html" class="result-item__link-image">
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница у подножия горы" class="result-item-link__image">
             </a>
-            <p class="result-item__stars">Рейтинг 4 звезды</p>
-            <p class="result-item__rating">Рейтинг: 8,5</p>
+            <div>
+              <p class="result-item__stars">Рейтинг 4 звезды</p>
+              <p class="result-item__rating">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li class="result__item">
-            <a href="blank.html" class="result-item__link">
-              <h3 class="result-item__title">Desert Quail Inn</h3>
-            </a>
-            <p class="result-item__text">Мотель</p>
-            <p class="result-item__text">От 3000 &#x20bd;</p>
-            <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
-            <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+            <div>
+              <a href="blank.html" class="result-item__link">
+                <h3 class="result-item__title">Desert Quail Inn</h3>
+              </a>
+              <p class="result-item__text">Мотель</p>
+              <p class="result-item__text">От 3000 &#x20bd;</p>
+              <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
+              <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+            </div>
             <a href="blank.html" class="result-item__link-image">
               <img src="img/Desert-Quail-Inn.jpg" width="135" height="90" alt="Мотель Desert Quail Inn" class="result-item-link__image">
             </a>
-            <p class="result-item__stars">Рейтинг 3 звезды</p>
-            <p class="result-item__rating">Рейтинг: 8,9</p>
+            <div>
+              <p class="result-item__stars">Рейтинг 3 звезды</p>
+              <p class="result-item__rating">Рейтинг: 8,9</p>
+            </div>
           </li>
           <li class="result__item">
-            <a href="blank.html" class="result-item__link">
-              <h3 class="result-item__title">Villas at Poco Diablo</h3>
-            </a>
-            <p class="result-item__text">Апартаменты</p>
-            <p class="result-item__text">От 2000 &#x20bd;</p>
-            <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
-            <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+            <div>
+              <a href="blank.html" class="result-item__link">
+                <h3 class="result-item__title">Villas at Poco Diablo</h3>
+              </a>
+              <p class="result-item__text">Апартаменты</p>
+              <p class="result-item__text">От 2000 &#x20bd;</p>
+              <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
+              <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+            </div>
             <a href="blank.html" class="result-item__link-image">
               <img src="img/Villas-at-Poco-Diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo" class="result-item-link__image">
             </a>
-            <p class="result-item__stars">Рейтинг 2 звезды</p>
-            <p class="result-item__rating">Рейтинг: 9,2</p>
+            <div>
+              <p class="result-item__stars">Рейтинг 2 звезды</p>
+              <p class="result-item__rating">Рейтинг: 9,2</p>
+            </div>
           </li>
         </ul>
       </section>
