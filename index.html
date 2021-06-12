@@ -125,58 +125,59 @@
       </section>
 
       <section class="popup">
-        <h2 class="popup__title">Поиск гостиницы в Седоне</h2>
-        <form method="POST" action="https://echo.htmlacademy.ru" class="form-search">
-          <div class="form-search__section">
-            <label for="arrival-date" class="form-search__label">Дата заезда:</label>
-            <input id="arrival-date" type="text" name="date-arrival" value="24 апреля 2017" class="form-search__input form-search__input--big">
+        <div class="popup__container">
+          <h2 class="popup__title">Поиск гостиницы в Седоне</h2>
+          <form method="POST" action="https://echo.htmlacademy.ru" class="form-search">
+            <div class="form-search__section">
+              <label for="arrival-date" class="form-search__label">Дата заезда:</label>
+              <input id="arrival-date" type="text" name="date-arrival" value="24 апреля 2017" class="form-search__input form-search__input--big">
 
-            <button type="button" class="form-search__button-date">
-              <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-date-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/></svg>
+              <button type="button" class="form-search__button-date">
+                <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-date-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/></svg>
 
-            </button>
-          </div>
-          <div class="form-search__section">
-            <label for="departure-date" class="form-search__label">Дата выезда:</label>
-            <input id="departure-date" type="text" name="date-departure" value="4 июля 2017" class="form-search__input form-search__input--big">
-            <button type="button" class="form-search__button-date">
-              <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-date-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/></svg>
-
-            </button>
-          </div>
-          <div class="form-search__section">
-            <label for="older" class="form-search__label">Взрослые:</label>
-            <div>
-            <button type="button" class="form-search__button-down">
-              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-down-svg">
-                <rect width="12" height="3" fill="#A9A9A9"/>
-                </svg>
-            </button>
-            <input id="older" type="text" name="older-people" value="2" class="form-search__input form-search__input--mini">
-            <button type="button" class="form-search__button-up">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-up-svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-                </svg>
-            </button>
+              </button>
             </div>
-            <label for="children" class="form-search__label">Дети:</label>
-            <div>
-            <button type="button" class="form-search__button-down">
-              <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-down-svg">
-                <rect width="12" height="3" fill="#A9A9A9"/>
-                </svg>
-            </button>
-            <input id="children" type="text" name="children-people" value="0" class="form-search__input form-search__input--mini">
-            <button type="button" class="form-search__button-up">
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-up-svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
-                </svg>
+            <div class="form-search__section">
+              <label for="departure-date" class="form-search__label">Дата выезда:</label>
+              <input id="departure-date" type="text" name="date-departure" value="4 июля 2017" class="form-search__input form-search__input--big">
+              <button type="button" class="form-search__button-date">
+                <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-date-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.025h2.845c.966 0 1.749.822 1.749 1.837v16.302C21 22.179 20.217 23 19.251 23H1.75C.784 23 0 22.179 0 21.164V4.862c0-1.015.784-1.837 1.75-1.837h2.843V1.648c0-.381.294-.689.657-.689.362 0 .656.308.656.689v1.377h3.938V1.648c0-.381.294-.689.657-.689.361 0 .655.308.655.689v1.377h3.938V1.648c0-.381.293-.689.656-.689.362 0 .656.308.656.689v1.377zm3.159 18.459a.448.448 0 00.123-.32h.001V4.862a.449.449 0 00-.437-.459h-2.845v1.378c0 .381-.294.689-.656.689-.363 0-.656-.308-.656-.689V4.403h-3.938v1.378c0 .381-.294.689-.655.689-.363 0-.657-.308-.657-.689V4.403H5.907v1.378c0 .381-.294.689-.656.689-.363 0-.657-.308-.657-.689V4.403H1.75a.45.45 0 00-.438.459v16.302a.45.45 0 00.438.459h17.501a.448.448 0 00.314-.139z" fill="#A9A9A9"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.594 9.225h2.625v2.066H4.594V9.225zm0 3.443h2.625v2.067H4.594v-2.067zm2.625 3.444H4.594v2.066h2.625v-2.066zm1.969 0h2.625v2.066H9.188v-2.066zm2.625-3.444H9.188v2.067h2.625v-2.067zM9.188 9.225h2.625v2.066H9.188V9.225zm7.218 6.887h-2.625v2.066h2.625v-2.066zm-2.625-3.444h2.625v2.067h-2.625v-2.067zm2.625-3.443h-2.625v2.066h2.625V9.225z" fill="#A9A9A9"/></svg>
 
-            </button>
-          </div>
-          </div>
-          <button type="submit" class="form-search__button"><span>Найти</span></button>
-        </form>
+              </button>
+            </div>
+            <div class="form-search__section">
+              <label for="older" class="form-search__label">Взрослые:</label>
+              <div class="form-search-button__wrapper">
+              <button type="button" class="form-search__button-down">
+                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-down-svg">
+                  <rect width="12" height="3" fill="#A9A9A9"/>
+                  </svg>
+              </button>
+              <input id="older" type="text" name="older-people" value="2" class="form-search__input form-search__input--mini">
+              <button type="button" class="form-search__button-up">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-up-svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                  </svg>
+              </button>
+              </div>
+              <label for="children" class="form-search__label">Дети:</label>
+              <div class="form-search-button__wrapper">
+              <button type="button" class="form-search__button-down">
+                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-down-svg">
+                  <rect width="12" height="3" fill="#A9A9A9"/>
+                  </svg>
+              </button>
+              <input id="children" type="text" name="children-people" value="0" class="form-search__input form-search__input--mini">
+              <button type="button" class="form-search__button-up">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="form-search__button-up-svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                  </svg>
+              </button>
+            </div>
+            </div>
+            <button type="submit" class="form-search__button"><span>Найти</span></button>
+          </form>
+        </div>
       </section>
 
       <section class="wrapper">

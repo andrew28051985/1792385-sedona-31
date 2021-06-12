@@ -92,8 +92,6 @@
 }
 .header__list {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
   grid-column: 1/-1;
   grid-row: 1/-1;
@@ -346,6 +344,14 @@
 }
 
 .popup {
+  position: relative;
+}
+.popup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+
   box-sizing: border-box;
   width: 568px;
   margin: 0 auto;
@@ -382,10 +388,12 @@
   border: 2px solid var(--basic-form);
 }
 .form-search__input:hover,
-.form-search__button-down:hover,
+.form-search-button__wrapper:hover .form-search__button-down,
+.form-search-button__wrapper:hover .form-search__button-up,
+.form-search-button__wrapper:hover .form-search__input,
 .form-search__button-up:hover {
   background-color: var(--hover-form);
-  border: 2px solid var(--basic-form);
+  border: 2px solid var(--hover-form);
 }
 .form-search__input:focus {
   background-color: var(--basic-light);
@@ -393,7 +401,8 @@
 }
 .form-search__button-date {
   position: absolute;
-  top: 7px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 9px;
   width: 21px;
   height: 23px;
@@ -401,17 +410,17 @@
 
   border: none;
 }
-.form-search__button-date-svg:hover > path,
-.form-search__button-up-svg:hover > path,
-.form-search__button-down-svg:hover > rect {
+.form-search__button-date:hover svg > path,
+.form-search__button-up:hover svg > path,
+.form-search__button-down:hover svg > rect {
   fill: var(--basic-dark);
 }
-.form-search__button-date-svg:active > path,
-.form-search__button-date-svg:focus > path,
-.form-search__button-up-svg:active > path,
-.form-search__button-down-svg:active > rect,
-.form-search__button-up-svg:focus > path,
-.form-search__button-down-svg:focus > rect   {
+.form-search__button-date:active svg > path,
+.form-search__button-date:focus svg > path,
+.form-search__button-up:active svg > path,
+.form-search__button-down:active svg > rect,
+.form-search__button-up:focus svg > path,
+.form-search__button-down:focus svg > rect   {
   fill: var(--basic-blue);
 }
 .form-search__input--mini {
@@ -441,6 +450,13 @@
   padding: 0;
 
   border: none;
+}
+.form-search__button-down,
+.form-search__button-up,
+.form-search__button-date,
+.selection-form-cost__button,
+.selection-form__input,
+.selection-form__label {
   cursor: pointer;
 }
 .form-search__button-down > svg > path {
@@ -672,6 +688,7 @@
   width: 1055px;
   margin: 0 auto;
 }
+.sorting__container div,
 .sorting__container ul {
   display: flex;
   justify-content: flex-start;
@@ -679,7 +696,7 @@
   margin: 0;
   padding: 0;
 }
-.sorting__container ul:first-child {
+.sorting__container div {
   margin-right: 46px;
 }
 .sorting__item-search:first-child {
@@ -797,7 +814,6 @@
   color: var(--basic-dark);
 }
 .result-item__link-image {
-  order: 0;
   width: 135px;
   height: 90px;
   margin-right: 29px;
