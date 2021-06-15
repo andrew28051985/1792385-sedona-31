@@ -96,7 +96,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: 1055px;
-  height: 56px;
   margin: 0 auto;
 }
 .nav__link {
@@ -137,6 +136,9 @@
   margin-right: 0;
 }
 .header-list-item__link {
+  display: block;
+  padding: 15px 0;
+
   color: var(--basic-color-dark);
 
   text-decoration: none;
