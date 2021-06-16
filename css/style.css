@@ -619,7 +619,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: -120px;
-  padding: 30px 0 36px;
+  padding: 32px 0 36px;
 
   background-color: var(--opacity90);
 }
@@ -662,7 +662,6 @@
 }
 .social__list li {
   margin-right: 6px;
-  margin-bottom: 6px;
 }
 .contacts,
 .contacts-item {
