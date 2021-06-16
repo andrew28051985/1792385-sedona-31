@@ -44,15 +44,15 @@
               <legend class="selection-form__title">Инфраструктура:</legend>
               <ul class="selection-form__list">
                 <li class="selection-form__item">
-                  <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" class="selection-form__input" checked>
+                  <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" class="selection-form__input visually-hidden" checked>
                   <label for="filter-swimming-pool" class="selection-form__label">Бассейн</label>
                 </li>
                 <li class="selection-form__item">
-                  <input type="checkbox" name="parking" id="filter-parking" class="selection-form__input">
+                  <input type="checkbox" name="parking" id="filter-parking" class="selection-form__input visually-hidden">
                   <label for="filter-parking" class="selection-form__label">Парковка</label>
                 </li>
                 <li class="selection-form__item">
-                  <input type="checkbox" name="wi-fi" id="filter-wi-fi" class="selection-form__input">
+                  <input type="checkbox" name="wi-fi" id="filter-wi-fi" class="selection-form__input visually-hidden">
                   <label for="filter-wi-fi" class="selection-form__label">wi-fi</label>
                 </li>
               </ul>
@@ -61,35 +61,48 @@
               <legend class="selection-form__title">Тип жилья:</legend>
               <ul class="selection-form__list">
                 <li class="selection-form__item">
-                  <input type="checkbox" name="hotel" id="filter-hotel" class="selection-form__input" checked>
+                  <input type="checkbox" name="hotel" id="filter-hotel" class="selection-form__input visually-hidden" checked>
                   <label for="filter-hotel" class="selection-form__label">Гостиница</label>
                 </li>
                 <li class="selection-form__item">
-                  <input type="checkbox" name="motel" id="filter-motel" class="selection-form__input" checked>
+                  <input type="checkbox" name="motel" id="filter-motel" class="selection-form__input visually-hidden" checked>
                   <label for="filter-motel" class="selection-form__label">Мотель</label>
                 </li>
                 <li class="selection-form__item">
-                  <input type="checkbox" name="apartment" id="filter-apartment" class="selection-form__input" checked>
+                  <input type="checkbox" name="apartment" id="filter-apartment" class="selection-form__input visually-hidden" checked>
                   <label for="filter-apartment" class="selection-form__label">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="selection-form__title">Стоимость в сутки, &#x20bd;:</legend>
-
-              <label for="for" class="selection-form-cost__label">От </label>
-              <input id="for" type="text" name="filter-for" class="selection-form-cost__input" onkeydown="return false" value="0">
-              <label for="to" class="selection-form-cost__label">До </label>
-              <input id="to" type="text" name="filter-to" class="selection-form-cost__input" value="3000" onkeydown="return false">
-
-              <div class="selection-form-cost__active-line"> <!--тут будет не активная линии ползунка-->
-                <div class="selection-form-cost__no-active-line">
-                  <!--тут будет активная линии ползунка-->
+              <legend class="selection-form__title selection-form-title--cost">Стоимость в сутки, &#x20bd;:</legend>
+              <div>
+                <div class="selection-form-wrap-left">
+                  <label for="for" class="selection-form-cost__label">От </label>
+                  <input id="for" type="text" name="filter-for" class="selection-form-cost__input" onkeydown="return false" value="0">
                 </div>
-                <button type="button" class="selection-form-cost__button selection-form-cost__button--start">От</button>
-                <button type="button" class="selection-form-cost__button selection-form-cost__button--finish">До</button>
+                <div class="selection-form-wrap-right">
+                  <label for="to" class="selection-form-cost__label">До </label>
+                  <input id="to" type="text" name="filter-to" class="selection-form-cost__input" value="3000" onkeydown="return false">
+                </div>
               </div>
-
+              <div class="range-filter">
+                <div class="selection-form-cost__no-active-line">
+                  <!--тут будет не активная линии ползунка-->
+                  <div class="selection-form-cost__active-line" style="
+                    width: 80%;
+                    margin-left: 0%;
+                  ">
+                    <!--тут будет активная линии ползунка-->
+                  </div>
+                </div>
+                <button type="button" class="selection-form-cost__button selection-form-cost__button--start" tabindex="0" style="
+                  left: 0%;
+                "></button>
+                <button type="button" class="selection-form-cost__button selection-form-cost__button--finish" tabindex="0" style="
+                  left: 80%;
+                "></button>
+              </div>
             </fieldset>
             <button type="submit" class="selection-form__button-search">Показать</button>
           </form>
@@ -110,8 +123,14 @@
               <li class="sorting__item sorting__item--active"><a href="blank.html">По цене</a></li>
               <li class="sorting__item"><a href="blank.html">По типу</a></li>
               <li class="sorting__item"><a href="blank.html">По рейтингу</a></li>
-              <li class="sorting__item sorting__item-right"><a href="blank.html">По возрастанию</a></li>
-              <li class="sorting__item sorting__item-right"><a href="blank.html">По убыванию</a></li>
+              <li class="sorting__item sorting__item-right"><a href="blank.html" class="sorting-item-right-link">
+                <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
+              </a></li>
+              <li class="sorting__item sorting__item-right"><a href="blank.html" class="sorting-item-right-link">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#CACACA"/>
+                  </svg>
+              </a></li>
             </ul>
           </div>
         </section>
@@ -134,7 +153,11 @@
                 <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
               </div>
               <div>
-                <p class="result-item__stars">Рейтинг 4 звезды</p>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <p class="result-item__stars visually-hidden">Рейтинг 4 звезды</p>
                 <p class="result-item__rating">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -154,7 +177,10 @@
                 <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
               </div>
               <div>
-                <p class="result-item__stars">Рейтинг 3 звезды</p>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <p class="result-item__stars visually-hidden">Рейтинг 3 звезды</p>
                 <p class="result-item__rating">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -174,7 +200,9 @@
                 <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
               </div>
               <div>
-                <p class="result-item__stars">Рейтинг 2 звезды</p>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <svg width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0l2.13 6.5H18l-5.56 4 2.13 6.5L9 12.99 3.44 17l2.12-6.5L0 6.5h6.88L9 0z" fill="#81B3D2"/></svg>
+                <p class="result-item__stars visually-hidden">Рейтинг 2 звезды</p>
                 <p class="result-item__rating">Рейтинг: 9,2</p>
               </div>
             </li>
