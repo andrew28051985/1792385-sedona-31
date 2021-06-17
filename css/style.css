@@ -180,7 +180,7 @@
 }
 .slogan__wrapper {
   display: grid;
-  grid-template-rows: min-content 216px;
+  grid-template-rows: min-content 1fr;
 
   padding-top: 77px;
 }
@@ -191,8 +191,11 @@
   margin-bottom: 81px;
 }
 .slogan__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-column: 1/-1;
-  height: 216px;
+  min-height: 216px;
   padding-top: 43px;
   padding-bottom: 51px;
   box-sizing: border-box;
@@ -200,11 +203,12 @@
   background-color: var(--basic-light);
 }
 .slogan__subtitle + P {
+  width: 500px;
   margin: 0;
 }
 .slogan__subtitle {
   width: 470px;
-  height: 80px;
+  min-height: 80px;
   margin: 0 auto 17px;
 
   font-size: 21px;
@@ -407,7 +411,7 @@
   justify-content: center;
   align-items: center;
   width: 568px;
-  height: 86px;
+  min-height: 86px;
 }
 .search__link,
 .result-item__button--book {
@@ -584,6 +588,10 @@
   align-items: center;
 }
 .form-search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 458px;
   padding: 16px 196px;
 }
 .form-search__button,
@@ -619,7 +627,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: -120px;
-  padding: 32px 0 36px;
+  padding: 32px 0 30px;
 
   background-color: var(--opacity90);
 }
@@ -662,6 +670,7 @@
 }
 .social__list li {
   margin-right: 6px;
+  margin-bottom: 6px;
 }
 .contacts,
 .contacts-item {
@@ -826,7 +835,8 @@
   outline: none;
   background: url("../img/elements/filter-button.svg") no-repeat;
 }
-.selection-form-cost__button:hover {
+.selection-form-cost__button:hover,
+.selection-form-cost__button:focus {
   width: 23px;
   height: 24px;
   background: url("../img/elements/filter-button-hover.svg") no-repeat;
@@ -925,13 +935,14 @@
 .sorting__container div,
 .sorting__container ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 .sorting__container div {
-  margin-right: 46px;
+  min-width: 167px;
 }
 .sorting__item-search {
   margin: 0;
@@ -1119,9 +1130,14 @@
 
 }
 .result-item__text {
-  width: 106px;
+  min-width: 106px;
   margin-right: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
+}
+.result-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 255px;
 }
 .result-item__rating {
   width: 110px;

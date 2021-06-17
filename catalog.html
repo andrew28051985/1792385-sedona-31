@@ -93,10 +93,8 @@
                     <!--тут будет активная линии ползунка-->
                   </div>
                 </div>
-                <button type="button" class="selection-form-cost__button selection-form-cost__button--start" tabindex="0" style="
-                  left: 0%;
-                "></button>
-                <button type="button" class="selection-form-cost__button selection-form-cost__button--finish" tabindex="0"></button>
+                <button type="button" class="selection-form-cost__button selection-form-cost__button--start" tabindex="0" aria-label="Начальная стоимость"></button>
+                <button type="button" class="selection-form-cost__button selection-form-cost__button--finish" tabindex="0" aria-label="Конечная стоимость"></button>
               </div>
             </fieldset>
             <button type="submit" class="selection-form__button-search">Показать</button>
@@ -118,10 +116,10 @@
               <li class="sorting__item sorting__item--active"><a href="blank.html">По цене</a></li>
               <li class="sorting__item"><a href="blank.html">По типу</a></li>
               <li class="sorting__item"><a href="blank.html">По рейтингу</a></li>
-              <li class="sorting__item sorting__item-right"><a href="blank.html" class="sorting-item-right-link">
+              <li class="sorting__item sorting__item-right"><a href="blank.html" class="sorting-item-right-link" aria-label="Сортировка по возрастанию">
                 <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
               </a></li>
-              <li class="sorting__item sorting__item-right"><a href="blank.html" class="sorting-item-right-link">
+              <li class="sorting__item sorting__item-right"><a href="blank.html" class="sorting-item-right-link" aria-label="Сортировка по убыванию">
                 <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#CACACA"/>
                   </svg>
@@ -144,8 +142,10 @@
                   <p class="result-item__text">Гостиница</p>
                   <p class="result-item__text">От 4000 &#x20bd;</p>
                 </div>
-                <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
-                <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+                <div class="result-button-wrapper">
+                  <a href="blank.html" class="result-item__button result-item__button--detail"><span>Подробнее</span></a>
+                  <a href="blank.html" class="result-item__button result-item__button--book"><span>Забронировать</span></a>
+                </div>
               </div>
               <div>
                 <img src="img/elements/star.svg" alt="звезда рейтинга" class="result-star">
