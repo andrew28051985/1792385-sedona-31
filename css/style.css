@@ -1031,7 +1031,7 @@
 .result__item {
   position: relative;
   display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  grid-template-columns: min-content 1fr 250px;
   padding: 30px 0;
 
   list-style: none;
@@ -1060,6 +1060,7 @@
 }
 .result__item > div:last-child {
   order: 2;
+  justify-self: end;
 
   text-align: right;
 }
@@ -1136,12 +1137,13 @@
 }
 .result-button-wrapper {
   display: flex;
-  justify-content: space-between;
-  width: 255px;
+  justify-content: flex-start;
+}
+.result-button-wrapper a:first-child {
+  margin-right: 6px;
 }
 .result-item__rating {
-  width: 110px;
-  padding: 3px 0px;
+  padding: 3px 12px 3px 15px;
 
   color: var(--rating-color);
 
