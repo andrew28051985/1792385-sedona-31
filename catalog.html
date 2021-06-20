@@ -40,64 +40,70 @@
         <section class="selection ">
           <h2 class="selection__title visually-hidden">Критерии выбора гостиницы</h2>
           <form method="POST" action="https://echo.htmlacademy.ru" class="selection__form">
-            <fieldset>
-              <legend class="selection-form__title">Инфраструктура:</legend>
-              <ul class="selection-form__list">
-                <li class="selection-form__item">
-                  <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" class="selection-form__input visually-hidden" checked>
-                  <label for="filter-swimming-pool" class="selection-form__label">Бассейн</label>
-                </li>
-                <li class="selection-form__item">
-                  <input type="checkbox" name="parking" id="filter-parking" class="selection-form__input visually-hidden">
-                  <label for="filter-parking" class="selection-form__label">Парковка</label>
-                </li>
-                <li class="selection-form__item">
-                  <input type="checkbox" name="wi-fi" id="filter-wi-fi" class="selection-form__input visually-hidden">
-                  <label for="filter-wi-fi" class="selection-form__label">wi-fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend class="selection-form__title">Тип жилья:</legend>
-              <ul class="selection-form__list">
-                <li class="selection-form__item">
-                  <input type="checkbox" name="hotel" id="filter-hotel" class="selection-form__input visually-hidden" checked>
-                  <label for="filter-hotel" class="selection-form__label">Гостиница</label>
-                </li>
-                <li class="selection-form__item">
-                  <input type="checkbox" name="motel" id="filter-motel" class="selection-form__input visually-hidden" checked>
-                  <label for="filter-motel" class="selection-form__label">Мотель</label>
-                </li>
-                <li class="selection-form__item">
-                  <input type="checkbox" name="apartment" id="filter-apartment" class="selection-form__input visually-hidden" checked>
-                  <label for="filter-apartment" class="selection-form__label">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend class="selection-form__title selection-form-title--cost">Стоимость в сутки, &#x20bd;:</legend>
-              <div>
-                <div class="selection-form-wrap-left">
-                  <label for="for" class="selection-form-cost__label">От </label>
-                  <input id="for" type="text" name="filter-for" class="selection-form-cost__input" onkeydown="return true" value="0">
-                </div>
-                <div class="selection-form-wrap-right">
-                  <label for="to" class="selection-form-cost__label">До </label>
-                  <input id="to" type="text" name="filter-to" class="selection-form-cost__input" value="3000" onkeydown="return true">
-                </div>
-              </div>
-              <div class="range-filter">
-                <div class="selection-form-cost__no-active-line">
-                  <!--тут будет не активная линии ползунка-->
-                  <div class="selection-form-cost__active-line">
-                    <!--тут будет активная линии ползунка-->
+            <div class="selection-form__checkbox-wrapper">
+              <fieldset class="selection__fieldset">
+                <legend class="selection-form__title">Инфраструктура:</legend>
+                <ul class="selection-form__list">
+                  <li class="selection-form__item">
+                    <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" class="selection-form__input visually-hidden" checked>
+                    <label for="filter-swimming-pool" class="selection-form__label">Бассейн</label>
+                  </li>
+                  <li class="selection-form__item">
+                    <input type="checkbox" name="parking" id="filter-parking" class="selection-form__input visually-hidden">
+                    <label for="filter-parking" class="selection-form__label">Парковка</label>
+                  </li>
+                  <li class="selection-form__item">
+                    <input type="checkbox" name="wi-fi" id="filter-wi-fi" class="selection-form__input visually-hidden">
+                    <label for="filter-wi-fi" class="selection-form__label">wi-fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="selection__fieldset">
+                <legend class="selection-form__title">Тип жилья:</legend>
+                <ul class="selection-form__list">
+                  <li class="selection-form__item">
+                    <input type="checkbox" name="hotel" id="filter-hotel" class="selection-form__input visually-hidden" checked>
+                    <label for="filter-hotel" class="selection-form__label">Гостиница</label>
+                  </li>
+                  <li class="selection-form__item">
+                    <input type="checkbox" name="motel" id="filter-motel" class="selection-form__input visually-hidden" checked>
+                    <label for="filter-motel" class="selection-form__label">Мотель</label>
+                  </li>
+                  <li class="selection-form__item">
+                    <input type="checkbox" name="apartment" id="filter-apartment" class="selection-form__input visually-hidden" checked>
+                    <label for="filter-apartment" class="selection-form__label">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="selection-form__cost-wrapper">
+              <fieldset class="selection__fieldset selection__fieldset-cost">
+                <legend class="selection-form__title selection-form-title--cost">Стоимость в сутки, &#x20bd;:</legend>
+                <div>
+                  <div class="selection-form-wrap-left">
+                    <label for="for" class="selection-form-cost__label">От </label>
+                    <input id="for" type="text" name="filter-for" class="selection-form-cost__input" onkeydown="return true" value="0">
+                  </div>
+                  <div class="selection-form-wrap-right">
+                    <label for="to" class="selection-form-cost__label">До </label>
+                    <input id="to" type="text" name="filter-to" class="selection-form-cost__input" value="3000" onkeydown="return true">
                   </div>
                 </div>
-                <button type="button" class="selection-form-cost__button selection-form-cost__button--start" tabindex="0" aria-label="Начальная стоимость"></button>
-                <button type="button" class="selection-form-cost__button selection-form-cost__button--finish" tabindex="0" aria-label="Конечная стоимость"></button>
+                <div class="range-filter">
+                  <div class="selection-form-cost__no-active-line">
+                    <!--тут будет не активная линии ползунка-->
+                    <div class="selection-form-cost__active-line">
+                      <!--тут будет активная линии ползунка-->
+                    </div>
+                  </div>
+                  <button type="button" class="selection-form-cost__button selection-form-cost__button--start" tabindex="0" aria-label="Начальная стоимость"></button>
+                  <button type="button" class="selection-form-cost__button selection-form-cost__button--finish" tabindex="0" aria-label="Конечная стоимость"></button>
+                </div>
+              </fieldset>
+              <div>
+                <button type="submit" class="selection-form__button-search">Показать</button>
               </div>
-            </fieldset>
-            <button type="submit" class="selection-form__button-search">Показать</button>
+            </div>
           </form>
         </section>
 
