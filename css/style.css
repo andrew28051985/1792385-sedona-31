@@ -621,10 +621,11 @@
 }
 
 .footer {
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: -120px;
-  padding: 32px 0 30px;
+  padding: 23px 0 36px;
 
   background-color: var(--opacity90);
 }
@@ -670,10 +671,16 @@
   margin-bottom: 6px;
 }
 .contacts,
-.contacts-item {
+.contacts__item {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+.contacts__item {
+  margin-bottom: 9px;
+}
+.contacts__item:last-child {
+  margin-bottom: 0;
 }
 .contacts-item__tel,
 .contacts-item__inst {
@@ -744,12 +751,6 @@
   padding-top: 26px;
   padding-bottom: 31px;
 }
-/*.selection__form > * {
-  margin: 0;
-  padding: 0;
-
-  border: none;
-}*/
 .selection-form__checkbox-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
