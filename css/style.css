@@ -592,10 +592,11 @@
   max-width: 458px;
   padding: 16px 196px;
 }
+.form-search__button {
+  order: 99;
+}
 .form-search__button,
 .result-item__button--detail {
-  order: 99;
-
   color: var(--basic-light);
 
   background-color: var(--basic-blue);
