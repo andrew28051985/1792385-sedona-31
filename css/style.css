@@ -127,12 +127,12 @@
 .header-list__item:nth-child(4n),
 .header-list__item:nth-child(5n) {
   flex-basis: 230px;
-  flex-grow: 1.1;
+  flex-grow: 2;
   flex-shrink: 0;
 }
 .header-list__item {
   flex-basis: 297px;
-  flex-grow: 1.7;
+  flex-grow: 3;
   flex-shrink: 0;
 }
 .header-list-item__link {
