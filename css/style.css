@@ -507,18 +507,14 @@
 .form-search__input:hover,
 .form-search__button-down:hover,
 .form-search__button-up:hover,
+.form-search__button-down:focus,
+.form-search__button-up:focus,
 .form-search__button-input:hover {
   background-color: var(--hover-form);
   border: 2px solid var(--hover-form);
 }
 .form-search__input:hover + .form-search__button-date {
   background-color: var(--hover-form);
-}
-.form-search__button-down:active rect,
-.form-search__button-up:active path,
-.form-search__button-down:focus rect,
-.form-search__button-up:focus path {
-  fill: var(--basic-light);
 }
 .form-search__input:focus,
 .form-search__input:active,
@@ -544,12 +540,15 @@
 }
 .form-search__button-date:hover path,
 .form-search__button-up:hover  path,
-.form-search__button-down:hover rect {
-  fill: var(--basic-dark);
-}
+.form-search__button-down:hover rect,
 .form-search__button-date:focus path,
 .form-search__button-up:focus path,
-.form-search__button-down:focus rect   {
+.form-search__button-down:focus rect {
+  fill: var(--basic-dark);
+}
+.form-search__button-date:active path,
+.form-search__button-up:active path,
+.form-search__button-down:active rect   {
   fill: var(--basic-blue);
 }
 .form-search__input--mini {
