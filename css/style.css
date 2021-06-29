@@ -105,8 +105,6 @@
   left: 50%;
 
   margin-left: -69px;
-
-  outline: none;
 }
 .header__list {
   display: flex;
@@ -955,6 +953,10 @@
   height: 23px;
   background: url(../img/elements/checkbox-on.svg) no-repeat;
 }
+.selection-form__input:focus + label::before {
+  outline: none;
+  outline: thin solid;
+}
 .selection-form__input:disabled + label::before {
   content: "";
   position: absolute;
@@ -1175,8 +1177,6 @@
   width: 135px;
   height: 90px;
   margin-right: 29px;
-
-  outline: none;
 }
 .result-item__link:hover,
 .result-item__link:focus,
