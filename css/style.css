@@ -668,7 +668,7 @@
 }
 .inner-page + .footer {
   margin-top: 0;
-  padding: 29px;
+  padding: 20px;
 }
 .footer,
 .contacts-item__tel,
@@ -796,7 +796,7 @@
   width: 1055px;
   margin: 0 auto;
   padding-top: 26px;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
 }
 .selection-form__checkbox-wrapper {
   display: grid;
@@ -993,6 +993,9 @@
   margin: 0;
   padding: 0;
 }
+.sorting__list {
+  margin-bottom: 3px;
+}
 .sorting__container div {
   flex-wrap: nowrap;
   margin-right: 46px;
@@ -1001,6 +1004,10 @@
   margin: 0;
   padding: 0;
   margin-right: 39px;
+  margin-bottom: 6px;
+
+  font-size: 12px;
+  line-height: 18px;
 }
 .list--arrow {
   flex-wrap: nowrap;
@@ -1017,19 +1024,20 @@
   list-style: none;
 }
 .sorting__item-search:first-child {
-  margin-top: 29px;
-  margin-right: 10px;
-  margin-bottom: 31px;
+  margin-top: 32px;
+  margin-right: 6px;
+  margin-bottom: 29px;
 }
 .sorting__item {
-  margin-right: 32px;
+  margin-right: 34px;
 }
 .sorting__item:last-child {
   margin-right: 0;
 }
 .sorting__item-right {
   margin: 0;
-  margin-right: 12px;
+  margin-top: 8px;
+  margin-right: 13px;
 }
 .sorting__item-right:last-child {
   margin-right: 0;
@@ -1131,7 +1139,12 @@
 }
 .result-item__title {
   margin: 0;
+  margin-top: -5px;
   margin-bottom: 7px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 }
 .result-item__text,
 .result-item__stars,
@@ -1147,7 +1160,7 @@
 }
 .result-item__button--book,
 .result-item__button--detail {
-  padding: 3px 16px;
+  padding: 4px 16px;
 
   font-weight: 700;
 }
@@ -1156,12 +1169,7 @@
   text-decoration: none;
 }
 .result-item__link {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
   color: var(--basic-dark);
-
-  outline: none;
 }
 .result-item__link-image {
   width: 135px;
@@ -1191,15 +1199,15 @@
 }
 .result-item__text {
   min-width: 106px;
-  margin-right: 6px;
-  margin-bottom: 9px;
+  margin-right: 10px;
+  margin-bottom: 14px;
 }
 .result-button-wrapper {
   display: flex;
   justify-content: flex-start;
 }
 .result-button-wrapper a:first-child {
-  margin-right: 6px;
+  margin-right: 8px;
 }
 .result-item__rating {
   padding: 3px 12px 3px 15px;
