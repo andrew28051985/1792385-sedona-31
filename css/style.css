@@ -1,8 +1,8 @@
 @font-face {
   font-family: "PT Sans";
   src:
-  url("../fonts/PTSans.woff") format("woff"),
-  url("../fonts/PTSans.woff2") format("woff2");
+  url("../fonts/PTSans.woff2") format("woff2"),
+  url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 @font-face {
   font-family: "PT Sans";
   src:
-  url("../fonts/PTSans-Bold.woff") format("woff"),
-  url("../fonts/PTSans-Bold.woff2") format("woff2");
+  url("../fonts/PTSans-Bold.woff2") format("woff2"),
+  url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -134,7 +134,7 @@
   flex-shrink: 0;
 }
 .header-list-item__link {
-  display: block;
+  display: inline-block;
   padding: 15px 0;
 
   color: var(--basic-color-dark);
@@ -458,7 +458,7 @@
 .popup {
   position: relative;
   z-index: 2;
-  display: none;
+  display: block;
 }
 .popup__container {
   position: absolute;
@@ -757,14 +757,12 @@
 .developers__link {
   outline: none;
 }
-.developers__link:active path {
-  fill: var(--basic-dark);
-
-  opacity: 0.3;
-}
 .developers__link:hover path,
 .developers__link:focus path {
   fill: var(--basic-blue);
+}
+.developers__link:active path {
+  fill: var(--developer-logo);
 }
 .developers__wrapper {
   display: flex;
@@ -1139,6 +1137,7 @@
   text-align: left;
 }
 .result-item__title {
+  display: inline-block;
   margin: 0;
   margin-top: -5px;
   margin-bottom: 7px;
