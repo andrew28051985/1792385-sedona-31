@@ -135,6 +135,7 @@
 }
 .header-list-item__link {
   display: inline-block;
+  vertical-align: middle;
   padding: 15px 0;
 
   color: var(--basic-color-dark);
@@ -1138,6 +1139,7 @@
 }
 .result-item__title {
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   margin-top: -5px;
   margin-bottom: 7px;
