@@ -90,6 +90,7 @@ window.addEventListener('keydown', function (evt) {
       popup.classList.add('popup-show');
       popup.classList.remove('popup-on');
       popup.classList.remove('popup-error');
+      clickCount = 0;
     }
   }
 });
